@@ -286,7 +286,7 @@ text-align: center;
   
   /* display: flex;
   flex-wrap: wrap; */
-  
+  padding: 0 16px;
   /* margin-bottom: 72px;  */
 } 
 
@@ -769,7 +769,7 @@ background-color: #404bbf;
 }
 /* ==================================================MEDIA===================================================== */
 
-@media screan and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
   .container {
     width: 736px;
@@ -788,7 +788,7 @@ background-color: #404bbf;
     display: flex;
      flex-wrap: wrap;
      justify-content: space-between;
-     padding: 0px;
+     padding: 0 92px;
      row-gap: 64px;
      column-gap: 24px;
    } 
