@@ -797,14 +797,16 @@ align-items: center;
 
 .link-policy {
 text-decoration: underline;
+line-height: 1.33;
 color: #4d5ae5;
+text-decoration-skip-ink: none;
 } 
 
 .privacy-policy {
 width: 16px;
 height: 16px;
 border: 1px solid rgba(46, 47, 66, 0.4);
-border-radius: 2px;
+border-radius: 0px;
 background-color: transparent;
 margin-right: 8px;
 fill: transparent;
@@ -814,7 +816,7 @@ justify-content: center;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-check:checked + .check-text span {
+.form-check:checked + .check-text .privacy-policy {
 background-color: #404bbf;
 fill: #f4f4fd;
 border: none;
@@ -990,9 +992,6 @@ letter-spacing: 0.04em;
 
 
 /* ================================================================1440==================================== */
-
-
-
 
 @media screen and (min-width: 1158px) {
 
