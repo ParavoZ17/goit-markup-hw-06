@@ -981,6 +981,8 @@ letter-spacing: 0.04em;
     width:  408px;
     padding-left: 24px;
     padding-right: 24px;
+    top: 96px;
+    transform: translateX(-50%);
   }
  
 } 
@@ -1131,8 +1133,15 @@ row-gap: 40px;
 .subscribe-email{
   opacity: 1;
 }
+
+.modal {
+  top: 80px;
+  transform: translateX(-50%);
+}
+
 .modal-input {
   padding-left: 38px;
+  
 }
 
 }
