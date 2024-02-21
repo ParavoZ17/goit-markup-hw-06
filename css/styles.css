@@ -123,9 +123,19 @@ button {
 }
 
 .nav-link {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-  
+    display: none;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+
 .current {
   position: relative;
   color: #404bbf;
@@ -143,6 +153,11 @@ button {
 }
 
 .contacts-link {
+    display: none;
+    font-family: inherit;
+    font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   color: #434455;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -161,7 +176,7 @@ button {
 
 .backdrop-menu {
   position: fixed;
-  background-color: rgba(46, 47, 66, 0.4);
+  background-color: #fff;
   top: 0;
   left: 0;
   width: 100%;
@@ -173,12 +188,14 @@ button {
 }
 
 .menu  {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   top: 0;
   left: 50%;
+  height: 100%;
   transform: translateX(-50%);
   width: 320px;
-  background-color: #fff;
   padding: 72px 24px 40px 16px;
   /* opacity: 0;
   visibility: hidden;
@@ -188,8 +205,9 @@ button {
 .item-menu:not(:last-child) {
   margin-bottom: 40px;
 }
+
 .list-menu {
-  margin-bottom: 168px;
+  margin-bottom: auto;
 }
 
 .link-menu {
@@ -803,6 +821,7 @@ text-decoration-skip-ink: none;
 } 
 
 .privacy-policy {
+  flex-shrink: 0;
 width: 16px;
 height: 16px;
 border: 1px solid rgba(46, 47, 66, 0.4);
@@ -847,7 +866,7 @@ background-color: #404bbf;
 @media screen and (min-width: 768px) {
 
   .container {
-    width: 736px;
+    width: 768px;
   }
 
 .logo-link {
@@ -856,15 +875,6 @@ background-color: #404bbf;
 
 .nav-link {
   display: block;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-list {
@@ -874,21 +884,18 @@ margin-right: 121px;
 
 .contacts-link {
   display: block;
-  font-family: inherit;
-  font-size: 12px;
-line-height: 1.17;
-letter-spacing: 0.04em;
 }
 .header-address-list {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
 }
+
 .btn-mob-menu {
   display: none;
 }
 
-.menu {
+.backdrop-menu {
   display: none;
 }
 
@@ -921,7 +928,9 @@ letter-spacing: 0.04em;
     line-height: 1.07;
     margin-bottom: 36px;
   }
-
+.advantages-title {
+  text-align: left;
+}
 
   .advantages-list {
     column-gap: 24px;
@@ -957,9 +966,9 @@ letter-spacing: 0.04em;
 
 
   .footer-container {
+    width: 584px;
     row-gap: 72px;
     column-gap: 24px;
-    margin-left: 92px;
     justify-content: left;
   }
 
@@ -1115,6 +1124,7 @@ row-gap: 40px;
 .footer-container {
   flex-wrap: nowrap;
   margin: 0 auto;
+  gap: 0;
 }
 
 .description {
